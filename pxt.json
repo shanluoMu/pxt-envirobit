@@ -1,25 +1,19 @@
 {
-    "name": "maqueen",
+    "name": "TDGesture",
     "version": "0.0.1",
-    "description": "Affordable mini robot designed by DFRobot",
+    "description": "Used to monitor the occurrence of gestures",
     "license": "MIT",
     "dependencies": {
         "core": "*"
     },
     "files": [
         "maqueen.ts",
-        "enums.d.ts",
-        "maqueenIR.cpp",
-        "ReceiverIR.cpp",
-        "ReceiverIR.h",
-        "RemoteIR.h",
-        "TransmitterIR.cpp",
-        "TransmitterIR.h",
-        "_locales/zh/maqueen-strings.json"
+        "_locales/zh/maqueen-strings.json",
+        "TDGesture.ts"
     ],
     "testFiles": [
         "tests.ts"
     ],
     "public": true,
-    "installedVersion": "workspace:f2a5ddad-838d-4d61-a467-ba00fdb479e7"
+    "installedVersion": "workspace:3eb72f5a-2f83-4cbf-aac3-172f1a952894"
 }
