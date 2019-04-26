@@ -42,24 +42,23 @@ enum chooseD {
     //% block="P20"
     P20 = DigitalPin.P20
 }
-enum whichPose {
-    //% block="向上"
-    Up = 4,
-    //% block="向下"
-    Down = 5,
-    //% block="向左"
-    Left = 3,
-    //% block="向右"
-    Right = 2,
-    //% block="顺时针"
-    CW = GI_AIRWHEEL_CW,
-    //% block="逆时针"
-    CCW = GI_AIRWHEEL_CCW
-}
 
 //% weight=10 color=#008B00 icon="\uf137" block="TDGesture"
 namespace TDGesture {
-
+    export enum whichPose {
+        //% block="Up"
+        Up = 4,
+        //% block="Down"
+        Down = 5,
+        //% block="Left"
+        Left = 3,
+        //% block="Right"
+        Right = 2,
+        //% block="CW"
+        CW = GI_AIRWHEEL_CW,
+        //% block="CCW"
+        CCW = GI_AIRWHEEL_CCW
+    }
     let MSGID_SENSORDATAOUT = 0x91
     //StreamingOutput Mask (DataOutputConfig), bitmask, 2Bytes
     let STREAMOUT_DSPINFO = 0x0001               //b0 : DSPInfo field
@@ -91,7 +90,7 @@ namespace TDGesture {
         /*获取数据到缓冲区*/
         let recbuf = pins.createBuffer(128) //recbuf为全局变量的话只能在function内部使用
         recbuf = pins.i2cReadBuffer(address, reclength, false)//repeated
-        serial.writeBuffer(recbuf)
+        //serial.writeBuffer(recbuf)
         /*处理缓冲区数据*/
         /*Extract data from buffer*/
         let streamOutRequired = (STREAMOUT_DSPINFO | STREAMOUT_GESTUREINFO | STREAMOUT_TOUCHINFO | STREAMOUT_AIRWHEELINFO | STREAMOUT_XYZPOSITION);
@@ -161,8 +160,8 @@ namespace TDGesture {
         if (Gespin == 0) {
 
             cmd = i2c1_MasterRead(26, 0x42)
-            serial.writeNumber(0)
-            serial.writeNumber(cmd)
+            // serial.writeNumber(0)
+            // serial.writeNumber(cmd)
             if (Pose == cmd) {
                 return true
             }

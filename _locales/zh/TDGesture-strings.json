@@ -1,3 +1,9 @@
 {
+    "TDGesture.whichPose.Up|block": "向上",
+    "TDGesture.whichPose.Down|block": "向下",
+    "TDGesture.whichPose.Left|block": "向左",
+    "TDGesture.whichPose.Right|block": "向右",
+    "TDGesture.whichPose.CW|block": "顺时针",
+    "TDGesture.whichPose.CCW|block": "逆时针",
     "TDGesture.Gesture|block": "引脚(D) %pinD|引脚(MCLR) %pinMCLR|当前手势为 %Pose|?"
 }
