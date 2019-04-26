@@ -153,7 +153,7 @@ namespace TDGesture {
     /*3D手势模块*/
     //% weight = 40
     //% blockId=Gesture block="pin(D) %pinD|pin(MCLR) %pinMCLR|Current posture %Pose|?"
-    export function Gesture(pinD: chooseD, pinMCLR: number, Pose: whichPose): boolean {
+    export function Gesture(pinD: chooseD, pinMCLR: chooseD, Pose: whichPose): boolean {
 
         let cmd: number
         let Gespin = pins.digitalReadPin(<number>pinD)
