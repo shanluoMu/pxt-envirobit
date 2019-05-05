@@ -20,4 +20,5 @@ clockwise and counterclockwise gestures in three-dimensional space.
 ## Blocks
 ![image](https://github.com/shanluoMu/3DGesture/blob/master/image/TDGesture.png)
 
+Judging whether the current gesture is consistent with the Current posture option box.
 get code:```https://github.com/DFRobot/pxt-3DGesture/blob/master/TDGesture.ts```
