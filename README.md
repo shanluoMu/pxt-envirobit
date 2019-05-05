@@ -18,6 +18,6 @@ The block is provided to realize three-dimensional gesture recognition, which ca
 clockwise and counterclockwise gestures in three-dimensional space.
 
 ## Blocks
-![image](https://github.com/shanluoMu/3DGesture/blob/master/image/3DGesture.png)
+![image](https://github.com/shanluoMu/3DGesture/blob/master/image/TDGesture.png)
 
 get code:```https://github.com/DFRobot/pxt-3DGesture/blob/master/TDGesture.ts```
