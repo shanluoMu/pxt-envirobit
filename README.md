@@ -1,7 +1,7 @@
 # 3D Gesture
 
 ## pxt-3DGesture Block for Micro:bit
-Providese a Micro:bit block for reading and interpreting Microchip MGC3030/3130 data over I2C.
+Providese a Microbit block for reading and interpreting Microchip MGC3030/3130 data over I2C.
 Used to read current gesture.
 
 ## Table of Contents
@@ -17,5 +17,7 @@ project URL: ```https://github.com/DFRobot/pxt-3DGesture```
 The block is provided to realize three-dimensional gesture recognition, which can realize and judge up, down, left, right, 
 clockwise and counterclockwise gestures in three-dimensional space.
 
-##Blocks
-1.Serial transmission over I2C bus
+## Blocks
+![image](https://github.com/shanluoMu/3DGesture/blob/master/image/3DGesture.png)
+
+get code:```https://github.com/DFRobot/pxt-3DGesture/blob/master/TDGesture.ts```
