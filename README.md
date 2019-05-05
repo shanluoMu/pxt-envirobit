@@ -1,7 +1,7 @@
 # 3D Gesture
 
-## pxt-3DGesture Block for Micro:bit
-Providese a Microbit block for reading and interpreting Microchip MGC3030/3130 data over I2C.<br>
+## pxt-3DGesture Block for Microbit
+Provides a Microbit block for reading and interpreting Microchip MGC3030/3130 data over I2C.<br>
 Used to read current gesture.
 
 ## Table of Contents
