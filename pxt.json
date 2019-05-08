@@ -1,5 +1,5 @@
 {
-    "name": "TDGesture",
+    "name": "MBT0013",
     "version": "0.0.1",
     "description": "Used to monitor the occurrence of gestures",
     "license": "MIT",
@@ -8,9 +8,9 @@
     },
     "files": [
         "_locales/zh/TDGesture-strings.json",
-        "TDGesture.ts"
+        "MBT0013.ts"
     ],
     "testFiles": [],
     "public": true,
-    "installedVersion": "workspace:6a93010f-c8b0-49fb-4492-483b71d2ec1a"
+    "installedVersion": "workspace:07bbf774-e541-4b0c-2b6a-6009097b6f9e"
 }
