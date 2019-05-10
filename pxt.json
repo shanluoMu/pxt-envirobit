@@ -10,7 +10,7 @@
         "_locales/zh/Environment-strings.json",
         "Environment.ts",
         "DFRobot_TCS34725.cpp",
-        "DFRobot_TCS34725.cpp"
+        "DFRobot_TCS34725.h"
     ],
     "testFiles": [],
     "public": true,
