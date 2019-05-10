@@ -20,7 +20,7 @@ let dig_H5 = 0
 let dig_H6 = 0
 
 //% weight=10 color=#008BFF icon="\uf1e8" block="MBT0013"
-namespace MBT0013 {
+namespace Environment {
     let adcbuf = pins.createBuffer(6)
     let BMEbuf = pins.createBuffer(32)
     let adc_tag = true
