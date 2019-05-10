@@ -7,7 +7,7 @@
         "core": "*"
     },
     "files": [
-        "_locales/zh/TDGesture-strings.json",
+        "_locales/zh/MBT0013-strings.json",
         "MBT0013.ts"
     ],
     "testFiles": [],
