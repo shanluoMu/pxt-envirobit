@@ -19,8 +19,18 @@ let dig_H4 = 0
 let dig_H5 = 0
 let dig_H6 = 0
 
+enum set_led {
+    //% block="OFF"
+    OFF = 0,
+    //% block="ON"
+    ON = 1,
+    //% block="Others"
+    Others = 0
+}
+
 //% weight=10 color=#008BFF icon="\uf1e8" block="MBT0013"
 namespace Environment {
+
     let adcbuf = pins.createBuffer(6)
     let BMEbuf = pins.createBuffer(32)
     let adc_tag = true
@@ -30,17 +40,26 @@ namespace Environment {
     let temp_raw = 0
     let hum_raw = 0
     let addbuf = pins.createBuffer(1)
-
+    let red = 0 
+    let green = 0
+    let blue = 0
     let t_fine = 0
-    function sub():number{
-        //Math.pow()
+
+    export function get_light(): number{
+        return 0
+    }
+    export function get_red(): number{
+        return 0
+    }
+    export function get_green(): number {
+        return 0
+    }
+    export function get_blue(): number {
         return 0
     }
 
     function OLED_display(): void {
 
-    }
-    function set_leds(): void {
     }
 
     function BME280_set(): void {
@@ -225,6 +244,15 @@ namespace Environment {
         return (v_x1 >> 12)
     }
 
+    //% weight = 53
+    //% blockId=LEDcontrol block="LED controller %Ledset"
+    export function LEDcontrol(Ledset: set_led): void {
+        let ledbuf = pins.createBuffer(2)
+        ledbuf[0] = 0x03
+        ledbuf[1] = Ledset
+        //serial.writeBuffer(ledbuf)
+        pins.i2cWriteBuffer(0x10, ledbuf)
+    }
 
     //% weight = 23
     //% blockId=get_temperature block="Temperature(℃)"
@@ -232,8 +260,8 @@ namespace Environment {
         let temp_cal = 0.0
         temp_cal = calibration_T();
         let temp_act = temp_cal / 100.0
-        serial.writeString("temp_act ")
-        serial.writeNumber(temp_act)
+        // serial.writeString("temp_act ")
+        // serial.writeNumber(temp_act)
         return temp_act
     }
 
@@ -242,8 +270,6 @@ namespace Environment {
     export function get_pressure(): number {
         let press_cal = calibration_P()
         let press_act = press_cal / 100.0
-        serial.writeString("press_act ")
-        serial.writeNumber(press_act)
         return press_act
     }
 
@@ -252,8 +278,6 @@ namespace Environment {
     export function get_humidity(): number {
         let hum_cal = calibration_P()
         let hum_act = hum_cal / 1024.0
-        serial.writeString("hum_act ")
-        serial.writeNumber(hum_act)
         return hum_act
     }
 
@@ -268,8 +292,6 @@ namespace Environment {
     function get_adc(): void { // no data???
         if (adc_tag) {
             initialset()
-            //     adc_tag = false
-            // }
             let initialbuf = pins.createBuffer(1)
             initialbuf[0] = 0x06
             pins.i2cWriteBuffer(0x10, initialbuf)

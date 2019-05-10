@@ -1,7 +1,7 @@
 {
-    "name": "MBT0013",
+    "name": "Environment",
     "version": "0.0.1",
-    "description": "Used to monitor the occurrence of gestures",
+    "description": "Used to monitor the occurrence of environment",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -12,5 +12,5 @@
     ],
     "testFiles": [],
     "public": true,
-    "installedVersion": "workspace:07bbf774-e541-4b0c-2b6a-6009097b6f9e"
+    "installedVersion": "workspace:85f6e614-9fa3-4530-15ec-fb0f959770fc"
 }
