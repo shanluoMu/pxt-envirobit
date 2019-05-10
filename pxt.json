@@ -7,8 +7,8 @@
         "core": "*"
     },
     "files": [
-        "_locales/zh/MBT0013-strings.json",
-        "MBT0013.ts"
+        "_locales/zh/Environment-strings.json",
+        "Environment.ts"
     ],
     "testFiles": [],
     "public": true,
