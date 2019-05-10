@@ -1,0 +1,7 @@
+{
+    "MBT0013.get_temperature|block": "环境温度(℃)",
+    "MBT0013.get_pressure|block": "大气压强(Pa)",
+    "MBT0013.get_humidity|block": "空气湿度(RH)",
+    "MBT0013.uvIntensity|block": "紫外线强度(mW/cm²)",
+    "MBT0013.get_sound|block": "环境声音(DB)"
+}
